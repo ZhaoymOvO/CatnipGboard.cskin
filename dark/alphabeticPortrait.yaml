@@ -1,0 +1,1771 @@
+keyboardHeight: 265
+toolbarHeight: 42
+keyboardStyle:
+  insets:
+    top: 3
+    bottom: 3
+    left: 3
+    right: 3
+toolbarStyle:
+  insets:
+    top: 2
+    bottom: 2
+    left: 4
+    right: 4
+toolbarLayout:
+  - HStack:
+      subviews:
+        - Cell: tb_switchPinyinButton
+        - Cell: tb_switchAlphabeticButton
+        - Cell: tb_switchNumericButton
+        - Cell: tb_dismissKeyboardButton
+keyboardLayout:
+  - HStack:
+      subviews:
+        - Cell: btn_1_symbol_1
+        - Cell: btn_2_symbol_2
+        - Cell: btn_3_symbol_3
+        - Cell: btn_4_symbol_4
+        - Cell: btn_5_symbol_5
+        - Cell: btn_6_symbol_6
+        - Cell: btn_7_symbol_7
+        - Cell: btn_8_symbol_8
+        - Cell: btn_9_symbol_9
+        - Cell: btn_0_symbol_0
+  - HStack:
+      subviews:
+        - Cell: btn_q_symbol_q
+        - Cell: btn_w_symbol_w
+        - Cell: btn_e_symbol_e
+        - Cell: btn_r_symbol_r
+        - Cell: btn_t_symbol_t
+        - Cell: btn_y_symbol_y
+        - Cell: btn_u_symbol_u
+        - Cell: btn_i_symbol_i
+        - Cell: btn_o_symbol_o
+        - Cell: btn_p_symbol_p
+  - HStack:
+      subviews:
+        - Cell: btn_a_symbol_a
+        - Cell: btn_s_symbol_s
+        - Cell: btn_d_symbol_d
+        - Cell: btn_f_symbol_f
+        - Cell: btn_g_symbol_g
+        - Cell: btn_h_symbol_h
+        - Cell: btn_j_symbol_j
+        - Cell: btn_k_symbol_k
+        - Cell: btn_l_symbol_l
+  - HStack:
+      subviews:
+        - Cell: btn_shift
+        - Cell: btn_z_symbol_z
+        - Cell: btn_x_symbol_x
+        - Cell: btn_c_symbol_c
+        - Cell: btn_v_symbol_v
+        - Cell: btn_b_symbol_b
+        - Cell: btn_n_symbol_n
+        - Cell: btn_m_symbol_m
+        - Cell: btn_backspace
+  - HStack:
+      subviews:
+        - Cell: btn_question_1_2_3_keyboardType_c_u_s_t_o_m_parenleft_e_n_underscore_s_y_m_1_parenright
+        - Cell: btn_comma_symbol_comma
+        - Cell: btn_lang_to_pinyin
+        - Cell: btn_space_en
+        - Cell: btn_period_symbol_period
+        - Cell: btn_enter
+tb_switchModeButton:
+  action:
+    keyboardType: alphabetic
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - chineseModeToggleForegroundStyle
+tb_commaButton:
+  action:
+    symbol: ，
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_zh_comma_16
+tb_periodButton:
+  action:
+    symbol: 。
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_zh_period_16
+tb_questionButton:
+  action:
+    symbol: ？
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_zh_question_16
+tb_dismissKeyboardButton:
+  action: dismissKeyboard
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - dismissKeyboardForegroundStyle
+tb_switchPinyinButton:
+  action:
+    keyboardType: pinyin
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_tb_pinyin
+tb_switchAlphabeticButton:
+  action:
+    keyboardType: alphabetic
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_tb_alpha
+tb_switchNumericButton:
+  action:
+    keyboardType: numeric
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_tb_num
+btn_shift:
+  size:
+    width:
+      percentage: 0.15
+  action: shift
+  uppercasedStateAction: shift
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - shiftForegroundStyle
+  uppercasedStateForegroundStyle:
+    - shiftUppercasedForegroundStyle
+  capsLockedStateForegroundStyle:
+    - shiftCapsLockedForegroundStyle
+btn_backspace:
+  size:
+    width:
+      percentage: 0.15
+  action: backspace
+  repeatAction: backspace
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - backspaceForegroundStyle
+btn_enter:
+  size:
+    width:
+      percentage: 0.18
+  action: enter
+  backgroundStyle: accentButtonBackground
+  foregroundStyle:
+    - enterForegroundStyle
+btn_space_zh:
+  action: space
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_space_zh
+btn_space_en:
+  action: space
+  processByRIME: false
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_space_en
+btn_1_symbol_1:
+  action:
+    symbol: "1"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_1_18
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+btn_2_symbol_2:
+  action:
+    symbol: "2"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_2_18
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+btn_3_symbol_3:
+  action:
+    symbol: "3"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_3_18
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+btn_4_symbol_4:
+  action:
+    symbol: "4"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_4_18
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+btn_5_symbol_5:
+  action:
+    symbol: "5"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_5_18
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+btn_6_symbol_6:
+  action:
+    symbol: "6"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_6_18
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+btn_7_symbol_7:
+  action:
+    symbol: "7"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_7_18
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+btn_8_symbol_8:
+  action:
+    symbol: "8"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_8_18
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+btn_9_symbol_9:
+  action:
+    symbol: "9"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_9_18
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+btn_0_symbol_0:
+  action:
+    symbol: "0"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_0_18
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+btn_q_symbol_q:
+  action:
+    symbol: q
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_q_17
+    - hint_percent
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "%"
+  uppercasedStateAction:
+    symbol: Q
+  uppercasedStateForegroundStyle:
+    - fg_Q_17
+    - hint_percent
+  capsLockedStateForegroundStyle:
+    - fg_Q_17
+    - hint_percent
+btn_w_symbol_w:
+  action:
+    symbol: w
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_w_17
+    - hint_backslash
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "\\"
+  uppercasedStateAction:
+    symbol: W
+  uppercasedStateForegroundStyle:
+    - fg_W_17
+    - hint_backslash
+  capsLockedStateForegroundStyle:
+    - fg_W_17
+    - hint_backslash
+btn_e_symbol_e:
+  action:
+    symbol: e
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_e_17
+    - hint_pipe
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "|"
+  uppercasedStateAction:
+    symbol: E
+  uppercasedStateForegroundStyle:
+    - fg_E_17
+    - hint_pipe
+  capsLockedStateForegroundStyle:
+    - fg_E_17
+    - hint_pipe
+btn_r_symbol_r:
+  action:
+    symbol: r
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_r_17
+    - hint_equal
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: =
+  uppercasedStateAction:
+    symbol: R
+  uppercasedStateForegroundStyle:
+    - fg_R_17
+    - hint_equal
+  capsLockedStateForegroundStyle:
+    - fg_R_17
+    - hint_equal
+btn_t_symbol_t:
+  action:
+    symbol: t
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_t_17
+    - hint_bracketleft
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "["
+  uppercasedStateAction:
+    symbol: T
+  uppercasedStateForegroundStyle:
+    - fg_T_17
+    - hint_bracketleft
+  capsLockedStateForegroundStyle:
+    - fg_T_17
+    - hint_bracketleft
+btn_y_symbol_y:
+  action:
+    symbol: y
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_y_17
+    - hint_bracketright
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "]"
+  uppercasedStateAction:
+    symbol: Y
+  uppercasedStateForegroundStyle:
+    - fg_Y_17
+    - hint_bracketright
+  capsLockedStateForegroundStyle:
+    - fg_Y_17
+    - hint_bracketright
+btn_u_symbol_u:
+  action:
+    symbol: u
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_u_17
+    - hint_less
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: <
+  uppercasedStateAction:
+    symbol: U
+  uppercasedStateForegroundStyle:
+    - fg_U_17
+    - hint_less
+  capsLockedStateForegroundStyle:
+    - fg_U_17
+    - hint_less
+btn_i_symbol_i:
+  action:
+    symbol: i
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_i_17
+    - hint_greater
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: ">"
+  uppercasedStateAction:
+    symbol: I
+  uppercasedStateForegroundStyle:
+    - fg_I_17
+    - hint_greater
+  capsLockedStateForegroundStyle:
+    - fg_I_17
+    - hint_greater
+btn_o_symbol_o:
+  action:
+    symbol: o
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_o_17
+    - hint_braceleft
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "{"
+  uppercasedStateAction:
+    symbol: O
+  uppercasedStateForegroundStyle:
+    - fg_O_17
+    - hint_braceleft
+  capsLockedStateForegroundStyle:
+    - fg_O_17
+    - hint_braceleft
+btn_p_symbol_p:
+  action:
+    symbol: p
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_p_17
+    - hint_braceright
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "}"
+  uppercasedStateAction:
+    symbol: P
+  uppercasedStateForegroundStyle:
+    - fg_P_17
+    - hint_braceright
+  capsLockedStateForegroundStyle:
+    - fg_P_17
+    - hint_braceright
+btn_a_symbol_a:
+  action:
+    symbol: a
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_a_17
+    - hint_at
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.15
+  bounds:
+    width: 2/3
+    alignment: right
+  swipeUpAction:
+    symbol: "@"
+  uppercasedStateAction:
+    symbol: A
+  uppercasedStateForegroundStyle:
+    - fg_A_17
+    - hint_at
+  capsLockedStateForegroundStyle:
+    - fg_A_17
+    - hint_at
+btn_s_symbol_s:
+  action:
+    symbol: s
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_s_17
+    - hint_hash
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "#"
+  uppercasedStateAction:
+    symbol: S
+  uppercasedStateForegroundStyle:
+    - fg_S_17
+    - hint_hash
+  capsLockedStateForegroundStyle:
+    - fg_S_17
+    - hint_hash
+btn_d_symbol_d:
+  action:
+    symbol: d
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_d_17
+    - hint_dollar
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: $
+  uppercasedStateAction:
+    symbol: D
+  uppercasedStateForegroundStyle:
+    - fg_D_17
+    - hint_dollar
+  capsLockedStateForegroundStyle:
+    - fg_D_17
+    - hint_dollar
+btn_f_symbol_f:
+  action:
+    symbol: f
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_f_17
+    - hint_underscore
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: _
+  uppercasedStateAction:
+    symbol: F
+  uppercasedStateForegroundStyle:
+    - fg_F_17
+    - hint_underscore
+  capsLockedStateForegroundStyle:
+    - fg_F_17
+    - hint_underscore
+btn_g_symbol_g:
+  action:
+    symbol: g
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_g_17
+    - hint_ampersand
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "&"
+  uppercasedStateAction:
+    symbol: G
+  uppercasedStateForegroundStyle:
+    - fg_G_17
+    - hint_ampersand
+  capsLockedStateForegroundStyle:
+    - fg_G_17
+    - hint_ampersand
+btn_h_symbol_h:
+  action:
+    symbol: h
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_h_17
+    - hint_minus
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "-"
+  uppercasedStateAction:
+    symbol: H
+  uppercasedStateForegroundStyle:
+    - fg_H_17
+    - hint_minus
+  capsLockedStateForegroundStyle:
+    - fg_H_17
+    - hint_minus
+btn_j_symbol_j:
+  action:
+    symbol: j
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_j_17
+    - hint_plus
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: +
+  uppercasedStateAction:
+    symbol: J
+  uppercasedStateForegroundStyle:
+    - fg_J_17
+    - hint_plus
+  capsLockedStateForegroundStyle:
+    - fg_J_17
+    - hint_plus
+btn_k_symbol_k:
+  action:
+    symbol: k
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_k_17
+    - hint_parenleft
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "("
+  uppercasedStateAction:
+    symbol: K
+  uppercasedStateForegroundStyle:
+    - fg_K_17
+    - hint_parenleft
+  capsLockedStateForegroundStyle:
+    - fg_K_17
+    - hint_parenleft
+btn_l_symbol_l:
+  action:
+    symbol: l
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_l_17
+    - hint_parenright
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.15
+  bounds:
+    width: 2/3
+    alignment: left
+  swipeUpAction:
+    symbol: ")"
+  uppercasedStateAction:
+    symbol: L
+  uppercasedStateForegroundStyle:
+    - fg_L_17
+    - hint_parenright
+  capsLockedStateForegroundStyle:
+    - fg_L_17
+    - hint_parenright
+btn_z_symbol_z:
+  action:
+    symbol: z
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_z_17
+    - hint_asterisk
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "*"
+  uppercasedStateAction:
+    symbol: Z
+  uppercasedStateForegroundStyle:
+    - fg_Z_17
+    - hint_asterisk
+  capsLockedStateForegroundStyle:
+    - fg_Z_17
+    - hint_asterisk
+btn_x_symbol_x:
+  action:
+    symbol: x
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_x_17
+    - hint_quote
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "\""
+  uppercasedStateAction:
+    symbol: X
+  uppercasedStateForegroundStyle:
+    - fg_X_17
+    - hint_quote
+  capsLockedStateForegroundStyle:
+    - fg_X_17
+    - hint_quote
+btn_c_symbol_c:
+  action:
+    symbol: c
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_c_17
+    - hint_apostrophe
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "'"
+  uppercasedStateAction:
+    symbol: C
+  uppercasedStateForegroundStyle:
+    - fg_C_17
+    - hint_apostrophe
+  capsLockedStateForegroundStyle:
+    - fg_C_17
+    - hint_apostrophe
+btn_v_symbol_v:
+  action:
+    symbol: v
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_v_17
+    - hint_colon
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: ":"
+  uppercasedStateAction:
+    symbol: V
+  uppercasedStateForegroundStyle:
+    - fg_V_17
+    - hint_colon
+  capsLockedStateForegroundStyle:
+    - fg_V_17
+    - hint_colon
+btn_b_symbol_b:
+  action:
+    symbol: b
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_b_17
+    - hint_semicolon
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: ;
+  uppercasedStateAction:
+    symbol: B
+  uppercasedStateForegroundStyle:
+    - fg_B_17
+    - hint_semicolon
+  capsLockedStateForegroundStyle:
+    - fg_B_17
+    - hint_semicolon
+btn_n_symbol_n:
+  action:
+    symbol: n
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_n_17
+    - hint_exclam
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "!"
+  uppercasedStateAction:
+    symbol: N
+  uppercasedStateForegroundStyle:
+    - fg_N_17
+    - hint_exclam
+  capsLockedStateForegroundStyle:
+    - fg_N_17
+    - hint_exclam
+btn_m_symbol_m:
+  action:
+    symbol: m
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_m_17
+    - hint_question
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+  swipeUpAction:
+    symbol: "?"
+  uppercasedStateAction:
+    symbol: M
+  uppercasedStateForegroundStyle:
+    - fg_M_17
+    - hint_question
+  capsLockedStateForegroundStyle:
+    - fg_M_17
+    - hint_question
+btn_question_1_2_3_keyboardType_c_u_s_t_o_m_parenleft_e_n_underscore_s_y_m_1_parenright:
+  action:
+    keyboardType: "custom(en_sym1)"
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_question_1_2_3_17
+  size:
+    width:
+      percentage: 0.14
+btn_comma_symbol_comma:
+  action:
+    symbol: ","
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_comma_17
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+btn_lang_to_pinyin:
+  size:
+    width:
+      percentage: 0.1
+  action:
+    keyboardType: pinyin
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - languageForegroundStyle
+btn_period_symbol_period:
+  action:
+    symbol: .
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_period_17
+  processByRIME: false
+  size:
+    width:
+      percentage: 0.1
+toolbarButtonBackgroundStyle:
+  buttonStyleType: geometry
+  cornerRadius: 7
+  insets:
+    top: 2
+    bottom: 2
+    left: 2
+    right: 2
+  normalColor: "#00000000"
+  highlightColor: "#FFFFFF11"
+normalButtonBackground:
+  buttonStyleType: geometry
+  cornerRadius: 8.5
+  insets:
+    top: 3.5
+    bottom: 3.5
+    left: 2.5
+    right: 2.5
+  normalColor: "#FFFFFF22"
+  highlightColor: "#FFFFFF11"
+functionButtonBackground:
+  buttonStyleType: geometry
+  cornerRadius: 8.5
+  insets:
+    top: 3.5
+    bottom: 3.5
+    left: 2.5
+    right: 2.5
+  normalColor: "#FFFFFF44"
+  highlightColor: "#FFFFFF11"
+accentButtonBackground:
+  buttonStyleType: geometry
+  cornerRadius: 8.5
+  insets:
+    top: 3.5
+    bottom: 3.5
+    left: 2.5
+    right: 2.5
+  normalColor: "#66CCFFCC"
+  highlightColor: "#FFFFFF22"
+candidateStyle:
+  insets:
+    top: 3
+    bottom: 3
+    left: 6
+    right: 6
+  candidateStateButtonStyle: candidateStateButtonStyle
+  highlightBackgroundColor: "#3A3A3C"
+  preferredIndexColor: "#39C5BB"
+  preferredTextColor: "#39C5BB"
+  preferredCommentColor: "#A0A0A5"
+  indexColor: "#A0A0A5"
+  textColor: "#FFFFFF"
+  commentColor: "#A0A0A5"
+  indexFontSize: 11
+  textFontSize: 18
+  commentFontSize: 11
+horizontalCandidateStyle:
+  insets:
+    top: 3
+    bottom: 3
+    left: 6
+    right: 6
+  candidateStateButtonStyle: candidateStateButtonStyle
+  highlightBackgroundColor: "#3A3A3C"
+  preferredIndexColor: "#39C5BB"
+  preferredTextColor: "#39C5BB"
+  preferredCommentColor: "#A0A0A5"
+  indexColor: "#A0A0A5"
+  textColor: "#FFFFFF"
+  commentColor: "#A0A0A5"
+  indexFontSize: 11
+  textFontSize: 18
+  commentFontSize: 11
+verticalCandidateStyle:
+  insets:
+    top: 8
+    bottom: 8
+    left: 8
+    right: 8
+  backgroundInsets:
+    top: 8
+    bottom: 8
+    left: 8
+    right: 8
+  cornerRadius: 8
+  highlightBackgroundColor: "#3A3A3C"
+  preferredIndexColor: "#39C5BB"
+  preferredTextColor: "#39C5BB"
+  preferredCommentColor: "#A0A0A5"
+  indexColor: "#A0A0A5"
+  textColor: "#FFFFFF"
+  commentColor: "#A0A0A5"
+  indexFontSize: 11
+  textFontSize: 18
+  commentFontSize: 11
+candidateStateButtonStyle:
+  backgroundStyle: toolbarButtonBackgroundStyle
+  foregroundStyle: candidateStateButtonForegroundStyle
+candidateStateButtonForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: chevron.down
+  normalColor: "#FFFFFF"
+  fontSize: 16
+shiftForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: shift
+  normalColor: "#FFFFFF"
+  fontSize: 18
+shiftUppercasedForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: shift.fill
+  normalColor: "#FFFFFF"
+  fontSize: 18
+shiftCapsLockedForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: capslock.fill
+  normalColor: "#FFFFFF"
+  fontSize: 18
+backspaceForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: delete.left
+  normalColor: "#FFFFFF"
+  fontSize: 18
+languageForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: book.closed
+  normalColor: "#FFFFFF"
+  fontSize: 17
+dismissKeyboardForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: keyboard.chevron.compact.down
+  normalColor: "#FFFFFF"
+  fontSize: 18
+enterForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: magnifyingglass
+  normalColor: "#FFFFFF"
+  fontSize: 17
+returnArrowForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: arrow.turn.down.left
+  normalColor: "#FFFFFF"
+  fontSize: 17
+chineseModeToggleForegroundStyle:
+  buttonStyleType: text
+  text: 中/英
+  normalColor: "#FFFFFF"
+  fontSize: 14
+fg_zh_comma_16:
+  buttonStyleType: text
+  text: ，
+  normalColor: "#FFFFFF"
+  fontSize: 16
+fg_zh_period_16:
+  buttonStyleType: text
+  text: 。
+  normalColor: "#FFFFFF"
+  fontSize: 16
+fg_zh_question_16:
+  buttonStyleType: text
+  text: ？
+  normalColor: "#FFFFFF"
+  fontSize: 16
+fg_tb_pinyin:
+  buttonStyleType: text
+  text: 拼音
+  normalColor: "#FFFFFF"
+  fontSize: 14
+fg_tb_alpha:
+  buttonStyleType: text
+  text: ABC
+  normalColor: "#FFFFFF"
+  fontSize: 14
+fg_tb_num:
+  buttonStyleType: text
+  text: "123"
+  normalColor: "#FFFFFF"
+  fontSize: 14
+fg_space_zh:
+  buttonStyleType: text
+  text: 拼音
+  normalColor: "#FFFFFF"
+  fontSize: 15
+fg_space_en:
+  buttonStyleType: text
+  text: English
+  normalColor: "#FFFFFF"
+  fontSize: 15
+fg_1_18:
+  buttonStyleType: text
+  text: "1"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_2_18:
+  buttonStyleType: text
+  text: "2"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_3_18:
+  buttonStyleType: text
+  text: "3"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_4_18:
+  buttonStyleType: text
+  text: "4"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_5_18:
+  buttonStyleType: text
+  text: "5"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_6_18:
+  buttonStyleType: text
+  text: "6"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_7_18:
+  buttonStyleType: text
+  text: "7"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_8_18:
+  buttonStyleType: text
+  text: "8"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_9_18:
+  buttonStyleType: text
+  text: "9"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_0_18:
+  buttonStyleType: text
+  text: "0"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_q_17:
+  buttonStyleType: text
+  text: q
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_Q_17:
+  buttonStyleType: text
+  text: Q
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_percent:
+  buttonStyleType: text
+  text: "%"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_w_17:
+  buttonStyleType: text
+  text: w
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_W_17:
+  buttonStyleType: text
+  text: W
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_backslash:
+  buttonStyleType: text
+  text: "\\"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_e_17:
+  buttonStyleType: text
+  text: e
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_E_17:
+  buttonStyleType: text
+  text: E
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_pipe:
+  buttonStyleType: text
+  text: "|"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_r_17:
+  buttonStyleType: text
+  text: r
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_R_17:
+  buttonStyleType: text
+  text: R
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_equal:
+  buttonStyleType: text
+  text: =
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_t_17:
+  buttonStyleType: text
+  text: t
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_T_17:
+  buttonStyleType: text
+  text: T
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_bracketleft:
+  buttonStyleType: text
+  text: "["
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_y_17:
+  buttonStyleType: text
+  text: y
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_Y_17:
+  buttonStyleType: text
+  text: Y
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_bracketright:
+  buttonStyleType: text
+  text: "]"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_u_17:
+  buttonStyleType: text
+  text: u
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_U_17:
+  buttonStyleType: text
+  text: U
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_less:
+  buttonStyleType: text
+  text: <
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_i_17:
+  buttonStyleType: text
+  text: i
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_I_17:
+  buttonStyleType: text
+  text: I
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_greater:
+  buttonStyleType: text
+  text: ">"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_o_17:
+  buttonStyleType: text
+  text: o
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_O_17:
+  buttonStyleType: text
+  text: O
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_braceleft:
+  buttonStyleType: text
+  text: "{"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_p_17:
+  buttonStyleType: text
+  text: p
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_P_17:
+  buttonStyleType: text
+  text: P
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_braceright:
+  buttonStyleType: text
+  text: "}"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_a_17:
+  buttonStyleType: text
+  text: a
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_A_17:
+  buttonStyleType: text
+  text: A
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_at:
+  buttonStyleType: text
+  text: "@"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_s_17:
+  buttonStyleType: text
+  text: s
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_S_17:
+  buttonStyleType: text
+  text: S
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_hash:
+  buttonStyleType: text
+  text: "#"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_d_17:
+  buttonStyleType: text
+  text: d
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_D_17:
+  buttonStyleType: text
+  text: D
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_dollar:
+  buttonStyleType: text
+  text: $
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_f_17:
+  buttonStyleType: text
+  text: f
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_F_17:
+  buttonStyleType: text
+  text: F
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_underscore:
+  buttonStyleType: text
+  text: _
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_g_17:
+  buttonStyleType: text
+  text: g
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_G_17:
+  buttonStyleType: text
+  text: G
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_ampersand:
+  buttonStyleType: text
+  text: "&"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_h_17:
+  buttonStyleType: text
+  text: h
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_H_17:
+  buttonStyleType: text
+  text: H
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_minus:
+  buttonStyleType: text
+  text: "-"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_j_17:
+  buttonStyleType: text
+  text: j
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_J_17:
+  buttonStyleType: text
+  text: J
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_plus:
+  buttonStyleType: text
+  text: +
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_k_17:
+  buttonStyleType: text
+  text: k
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_K_17:
+  buttonStyleType: text
+  text: K
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_parenleft:
+  buttonStyleType: text
+  text: "("
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_l_17:
+  buttonStyleType: text
+  text: l
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_L_17:
+  buttonStyleType: text
+  text: L
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_parenright:
+  buttonStyleType: text
+  text: ")"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_z_17:
+  buttonStyleType: text
+  text: z
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_Z_17:
+  buttonStyleType: text
+  text: Z
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_asterisk:
+  buttonStyleType: text
+  text: "*"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_x_17:
+  buttonStyleType: text
+  text: x
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_X_17:
+  buttonStyleType: text
+  text: X
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_quote:
+  buttonStyleType: text
+  text: "\""
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_c_17:
+  buttonStyleType: text
+  text: c
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_C_17:
+  buttonStyleType: text
+  text: C
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_apostrophe:
+  buttonStyleType: text
+  text: "'"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_v_17:
+  buttonStyleType: text
+  text: v
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_V_17:
+  buttonStyleType: text
+  text: V
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_colon:
+  buttonStyleType: text
+  text: ":"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_b_17:
+  buttonStyleType: text
+  text: b
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_B_17:
+  buttonStyleType: text
+  text: B
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_semicolon:
+  buttonStyleType: text
+  text: ;
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_n_17:
+  buttonStyleType: text
+  text: n
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_N_17:
+  buttonStyleType: text
+  text: N
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_exclam:
+  buttonStyleType: text
+  text: "!"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_m_17:
+  buttonStyleType: text
+  text: m
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_M_17:
+  buttonStyleType: text
+  text: M
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+hint_question:
+  buttonStyleType: text
+  text: "?"
+  normalColor: "#A0A0A5"
+  fontSize: 10
+  center:
+    x: 0.75
+    y: 0.28
+fg_question_1_2_3_17:
+  buttonStyleType: text
+  text: "?123"
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_comma_17:
+  buttonStyleType: text
+  text: ","
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_period_17:
+  buttonStyleType: text
+  text: .
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54

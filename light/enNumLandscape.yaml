@@ -1,0 +1,694 @@
+keyboardHeight: 185
+toolbarHeight: 36
+keyboardStyle:
+  insets:
+    top: 3
+    bottom: 3
+    left: 3
+    right: 3
+toolbarStyle:
+  insets:
+    top: 2
+    bottom: 2
+    left: 4
+    right: 4
+toolbarLayout:
+  - HStack:
+      subviews:
+        - Cell: tb_switchPinyinButton
+        - Cell: tb_switchAlphabeticButton
+        - Cell: tb_switchNumericButton
+        - Cell: tb_dismissKeyboardButton
+keyboardLayout:
+  - HStack:
+      subviews:
+        - Cell: btn_plus_symbol_plus
+        - Cell: btn_1_symbol_1
+        - Cell: btn_2_symbol_2
+        - Cell: btn_3_symbol_3
+        - Cell: btn_percent_symbol_percent
+  - HStack:
+      subviews:
+        - Cell: btn_minus_symbol_minus
+        - Cell: btn_4_symbol_4
+        - Cell: btn_5_symbol_5
+        - Cell: btn_6_symbol_6
+        - Cell: btn_exclam_question_hash_keyboardType_c_u_s_t_o_m_parenleft_e_n_underscore_s_y_m_1_parenright
+  - HStack:
+      subviews:
+        - Cell: btn_asterisk_symbol_asterisk
+        - Cell: btn_7_symbol_7
+        - Cell: btn_8_symbol_8
+        - Cell: btn_9_symbol_9
+        - Cell: btn_num_backspace
+  - HStack:
+      subviews:
+        - Cell: btn_slash_symbol_slash
+        - Cell: btn_comma_symbol_comma
+        - Cell: btn_0_symbol_0
+        - Cell: btn_equal_symbol_equal
+        - Cell: btn_period_symbol_period
+  - HStack:
+      subviews:
+        - Cell: btn_A_B_C_keyboardType_a_l_p_h_a_b_e_t_i_c
+        - Cell: btn_num_space_en_num
+        - Cell: btn_num_enter
+tb_switchModeButton:
+  action:
+    keyboardType: alphabetic
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - chineseModeToggleForegroundStyle
+tb_commaButton:
+  action:
+    symbol: ，
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_zh_comma_16
+tb_periodButton:
+  action:
+    symbol: 。
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_zh_period_16
+tb_questionButton:
+  action:
+    symbol: ？
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_zh_question_16
+tb_dismissKeyboardButton:
+  action: dismissKeyboard
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - dismissKeyboardForegroundStyle
+tb_switchPinyinButton:
+  action:
+    keyboardType: pinyin
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_tb_pinyin
+tb_switchAlphabeticButton:
+  action:
+    keyboardType: alphabetic
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_tb_alpha
+tb_switchNumericButton:
+  action:
+    keyboardType: numeric
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_tb_num
+btn_shift:
+  size:
+    width:
+      percentage: 0.15
+  action: shift
+  uppercasedStateAction: shift
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - shiftForegroundStyle
+  uppercasedStateForegroundStyle:
+    - shiftUppercasedForegroundStyle
+  capsLockedStateForegroundStyle:
+    - shiftCapsLockedForegroundStyle
+btn_backspace:
+  size:
+    width:
+      percentage: 0.15
+  action: backspace
+  repeatAction: backspace
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - backspaceForegroundStyle
+btn_enter:
+  size:
+    width:
+      percentage: 0.18
+  action: enter
+  backgroundStyle: accentButtonBackground
+  foregroundStyle:
+    - enterForegroundStyle
+btn_space_zh:
+  action: space
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_space_zh
+btn_space_en:
+  action: space
+  processByRIME: false
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_space_en
+btn_plus_symbol_plus:
+  action:
+    symbol: +
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_plus_20
+  size:
+    width:
+      percentage: 0.18
+btn_1_symbol_1:
+  action:
+    symbol: "1"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_1_20
+  size:
+    width:
+      percentage: 0.21
+btn_2_symbol_2:
+  action:
+    symbol: "2"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_2_20
+  size:
+    width:
+      percentage: 0.21
+btn_3_symbol_3:
+  action:
+    symbol: "3"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_3_20
+  size:
+    width:
+      percentage: 0.21
+btn_percent_symbol_percent:
+  action:
+    symbol: "%"
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_percent_20
+  size:
+    width:
+      percentage: 0.18
+btn_minus_symbol_minus:
+  action:
+    symbol: "-"
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_minus_18
+  size:
+    width:
+      percentage: 0.18
+btn_4_symbol_4:
+  action:
+    symbol: "4"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_4_20
+  size:
+    width:
+      percentage: 0.21
+btn_5_symbol_5:
+  action:
+    symbol: "5"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_5_20
+  size:
+    width:
+      percentage: 0.21
+btn_6_symbol_6:
+  action:
+    symbol: "6"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_6_20
+  size:
+    width:
+      percentage: 0.21
+btn_exclam_question_hash_keyboardType_c_u_s_t_o_m_parenleft_e_n_underscore_s_y_m_1_parenright:
+  action:
+    keyboardType: "custom(en_sym1)"
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_exclam_question_hash_18
+  size:
+    width:
+      percentage: 0.18
+btn_num_backspace:
+  size:
+    width:
+      percentage: 0.18
+  action: backspace
+  repeatAction: backspace
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - backspaceForegroundStyle
+btn_asterisk_symbol_asterisk:
+  action:
+    symbol: "*"
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_asterisk_20
+  size:
+    width:
+      percentage: 0.18
+btn_7_symbol_7:
+  action:
+    symbol: "7"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_7_20
+  size:
+    width:
+      percentage: 0.21
+btn_8_symbol_8:
+  action:
+    symbol: "8"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_8_20
+  size:
+    width:
+      percentage: 0.21
+btn_9_symbol_9:
+  action:
+    symbol: "9"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_9_20
+  size:
+    width:
+      percentage: 0.21
+btn_slash_symbol_slash:
+  action:
+    symbol: /
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_slash_20
+  size:
+    width:
+      percentage: 0.18
+btn_comma_symbol_comma:
+  action:
+    symbol: ","
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_comma_20
+  size:
+    width:
+      percentage: 0.21
+btn_0_symbol_0:
+  action:
+    symbol: "0"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_0_20
+  size:
+    width:
+      percentage: 0.21
+btn_equal_symbol_equal:
+  action:
+    symbol: =
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_equal_20
+  size:
+    width:
+      percentage: 0.21
+btn_period_symbol_period:
+  action:
+    symbol: .
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_period_20
+  size:
+    width:
+      percentage: 0.18
+btn_A_B_C_keyboardType_a_l_p_h_a_b_e_t_i_c:
+  action:
+    keyboardType: alphabetic
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_A_B_C_16
+  size:
+    width:
+      percentage: 0.25
+btn_num_space_en_num:
+  action: space
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_space_en
+btn_num_enter:
+  size:
+    width:
+      percentage: 0.25
+  action: enter
+  backgroundStyle: accentButtonBackground
+  foregroundStyle:
+    - enterForegroundStyle
+toolbarButtonBackgroundStyle:
+  buttonStyleType: geometry
+  cornerRadius: 7
+  insets:
+    top: 2
+    bottom: 2
+    left: 2
+    right: 2
+  normalColor: "#00000000"
+  highlightColor: "#FFFFFF22"
+normalButtonBackground:
+  buttonStyleType: geometry
+  cornerRadius: 8.5
+  insets:
+    top: 3.5
+    bottom: 3.5
+    left: 2.5
+    right: 2.5
+  normalColor: "#FFFFFFAA"
+  highlightColor: "#FFFFFF22"
+functionButtonBackground:
+  buttonStyleType: geometry
+  cornerRadius: 8.5
+  insets:
+    top: 3.5
+    bottom: 3.5
+    left: 2.5
+    right: 2.5
+  normalColor: "#FFFFFF88"
+  highlightColor: "#FFFFFF22"
+accentButtonBackground:
+  buttonStyleType: geometry
+  cornerRadius: 8.5
+  insets:
+    top: 3.5
+    bottom: 3.5
+    left: 2.5
+    right: 2.5
+  normalColor: "#66CCFFCC"
+  highlightColor: "#FFFFFF22"
+candidateStyle:
+  insets:
+    top: 3
+    bottom: 3
+    left: 6
+    right: 6
+  candidateStateButtonStyle: candidateStateButtonStyle
+  highlightBackgroundColor: "#CFD8DC"
+  preferredIndexColor: "#39C5BB"
+  preferredTextColor: "#39C5BB"
+  preferredCommentColor: "#70757A"
+  indexColor: "#70757A"
+  textColor: "#202124"
+  commentColor: "#70757A"
+  indexFontSize: 11
+  textFontSize: 18
+  commentFontSize: 11
+horizontalCandidateStyle:
+  insets:
+    top: 3
+    bottom: 3
+    left: 6
+    right: 6
+  candidateStateButtonStyle: candidateStateButtonStyle
+  highlightBackgroundColor: "#CFD8DC"
+  preferredIndexColor: "#39C5BB"
+  preferredTextColor: "#39C5BB"
+  preferredCommentColor: "#70757A"
+  indexColor: "#70757A"
+  textColor: "#202124"
+  commentColor: "#70757A"
+  indexFontSize: 11
+  textFontSize: 18
+  commentFontSize: 11
+verticalCandidateStyle:
+  insets:
+    top: 8
+    bottom: 8
+    left: 8
+    right: 8
+  backgroundInsets:
+    top: 8
+    bottom: 8
+    left: 8
+    right: 8
+  cornerRadius: 8
+  highlightBackgroundColor: "#CFD8DC"
+  preferredIndexColor: "#39C5BB"
+  preferredTextColor: "#39C5BB"
+  preferredCommentColor: "#70757A"
+  indexColor: "#70757A"
+  textColor: "#202124"
+  commentColor: "#70757A"
+  indexFontSize: 11
+  textFontSize: 18
+  commentFontSize: 11
+candidateStateButtonStyle:
+  backgroundStyle: toolbarButtonBackgroundStyle
+  foregroundStyle: candidateStateButtonForegroundStyle
+candidateStateButtonForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: chevron.down
+  normalColor: "#202124"
+  fontSize: 16
+shiftForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: shift
+  normalColor: "#202124"
+  fontSize: 18
+shiftUppercasedForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: shift.fill
+  normalColor: "#202124"
+  fontSize: 18
+shiftCapsLockedForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: capslock.fill
+  normalColor: "#202124"
+  fontSize: 18
+backspaceForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: delete.left
+  normalColor: "#202124"
+  fontSize: 18
+languageForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: book.closed
+  normalColor: "#202124"
+  fontSize: 17
+dismissKeyboardForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: keyboard.chevron.compact.down
+  normalColor: "#202124"
+  fontSize: 18
+enterForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: magnifyingglass
+  normalColor: "#FFFFFF"
+  fontSize: 17
+returnArrowForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: arrow.turn.down.left
+  normalColor: "#FFFFFF"
+  fontSize: 17
+chineseModeToggleForegroundStyle:
+  buttonStyleType: text
+  text: 中/英
+  normalColor: "#202124"
+  fontSize: 14
+fg_zh_comma_16:
+  buttonStyleType: text
+  text: ，
+  normalColor: "#202124"
+  fontSize: 16
+fg_zh_period_16:
+  buttonStyleType: text
+  text: 。
+  normalColor: "#202124"
+  fontSize: 16
+fg_zh_question_16:
+  buttonStyleType: text
+  text: ？
+  normalColor: "#202124"
+  fontSize: 16
+fg_tb_pinyin:
+  buttonStyleType: text
+  text: 拼音
+  normalColor: "#202124"
+  fontSize: 14
+fg_tb_alpha:
+  buttonStyleType: text
+  text: ABC
+  normalColor: "#202124"
+  fontSize: 14
+fg_tb_num:
+  buttonStyleType: text
+  text: "123"
+  normalColor: "#202124"
+  fontSize: 14
+fg_space_zh:
+  buttonStyleType: text
+  text: 拼音
+  normalColor: "#202124"
+  fontSize: 15
+fg_space_en:
+  buttonStyleType: text
+  text: English
+  normalColor: "#202124"
+  fontSize: 15
+fg_plus_20:
+  buttonStyleType: text
+  text: +
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_1_20:
+  buttonStyleType: text
+  text: "1"
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_2_20:
+  buttonStyleType: text
+  text: "2"
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_3_20:
+  buttonStyleType: text
+  text: "3"
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_percent_20:
+  buttonStyleType: text
+  text: "%"
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_minus_18:
+  buttonStyleType: text
+  text: "-"
+  normalColor: "#202124"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_4_20:
+  buttonStyleType: text
+  text: "4"
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_5_20:
+  buttonStyleType: text
+  text: "5"
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_6_20:
+  buttonStyleType: text
+  text: "6"
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_exclam_question_hash_18:
+  buttonStyleType: text
+  text: "!?#"
+  normalColor: "#202124"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_asterisk_20:
+  buttonStyleType: text
+  text: "*"
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_7_20:
+  buttonStyleType: text
+  text: "7"
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_8_20:
+  buttonStyleType: text
+  text: "8"
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_9_20:
+  buttonStyleType: text
+  text: "9"
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_slash_20:
+  buttonStyleType: text
+  text: /
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_comma_20:
+  buttonStyleType: text
+  text: ","
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_0_20:
+  buttonStyleType: text
+  text: "0"
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_equal_20:
+  buttonStyleType: text
+  text: =
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_period_20:
+  buttonStyleType: text
+  text: .
+  normalColor: "#202124"
+  fontSize: 20
+  center:
+    x: 0.5
+    y: 0.54
+fg_A_B_C_16:
+  buttonStyleType: text
+  text: ABC
+  normalColor: "#202124"
+  fontSize: 16
+  center:
+    x: 0.5
+    y: 0.54

@@ -1,0 +1,1068 @@
+keyboardHeight: 185
+toolbarHeight: 36
+keyboardStyle:
+  insets:
+    top: 3
+    bottom: 3
+    left: 3
+    right: 3
+toolbarStyle:
+  insets:
+    top: 2
+    bottom: 2
+    left: 4
+    right: 4
+toolbarLayout:
+  - HStack:
+      subviews:
+        - Cell: tb_switchPinyinButton
+        - Cell: tb_switchAlphabeticButton
+        - Cell: tb_switchNumericButton
+        - Cell: tb_dismissKeyboardButton
+keyboardLayout:
+  - HStack:
+      subviews:
+        - Cell: btn_1_symbol_1
+        - Cell: btn_2_symbol_2
+        - Cell: btn_3_symbol_3
+        - Cell: btn_4_symbol_4
+        - Cell: btn_5_symbol_5
+        - Cell: btn_6_symbol_6
+        - Cell: btn_7_symbol_7
+        - Cell: btn_8_symbol_8
+        - Cell: btn_9_symbol_9
+        - Cell: btn_0_symbol_0
+  - HStack:
+      subviews:
+        - Cell: btn_tilde_symbol_tilde
+        - Cell: btn_backtick_symbol_backtick
+        - Cell: btn_pipe_symbol_pipe
+        - Cell: btn_bullet_symbol_bullet
+        - Cell: btn_check_symbol_check
+        - Cell: btn_pi_symbol_pi
+        - Cell: btn_divide_symbol_divide
+        - Cell: btn_multiply_symbol_multiply
+        - Cell: btn_section_symbol_section
+        - Cell: btn_delta_symbol_delta
+  - HStack:
+      subviews:
+        - Cell: btn_pound_symbol_pound
+        - Cell: btn_cent_symbol_cent
+        - Cell: btn_euro_symbol_euro
+        - Cell: btn_yen_symbol_yen
+        - Cell: btn_caret_symbol_caret
+        - Cell: btn_degree_symbol_degree
+        - Cell: btn_equal_symbol_equal
+        - Cell: btn_braceleft_symbol_braceleft
+        - Cell: btn_braceright_symbol_braceright
+        - Cell: btn_backslash_symbol_backslash
+  - HStack:
+      subviews:
+        - Cell: btn_question_1_2_3_keyboardType_c_u_s_t_o_m_parenleft_e_n_underscore_s_y_m_1_parenright
+        - Cell: btn_percent_symbol_percent
+        - Cell: btn_copyright_symbol_copyright
+        - Cell: btn_registered_symbol_registered
+        - Cell: btn_tm_symbol_tm
+        - Cell: btn_checkmark_symbol_checkmark
+        - Cell: btn_bracketleft_symbol_bracketleft
+        - Cell: btn_bracketright_symbol_bracketright
+        - Cell: btn_backspace
+  - HStack:
+      subviews:
+        - Cell: btn_A_B_C_keyboardType_a_l_p_h_a_b_e_t_i_c
+        - Cell: btn_less_symbol_less
+        - Cell: btn_更_多_keyboardType_s_y_m_b_o_l_i_c
+        - Cell: btn_space_en
+        - Cell: btn_greater_symbol_greater
+        - Cell: btn_enter
+tb_switchModeButton:
+  action:
+    keyboardType: alphabetic
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - chineseModeToggleForegroundStyle
+tb_commaButton:
+  action:
+    symbol: ，
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_zh_comma_16
+tb_periodButton:
+  action:
+    symbol: 。
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_zh_period_16
+tb_questionButton:
+  action:
+    symbol: ？
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_zh_question_16
+tb_dismissKeyboardButton:
+  action: dismissKeyboard
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - dismissKeyboardForegroundStyle
+tb_switchPinyinButton:
+  action:
+    keyboardType: pinyin
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_tb_pinyin
+tb_switchAlphabeticButton:
+  action:
+    keyboardType: alphabetic
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_tb_alpha
+tb_switchNumericButton:
+  action:
+    keyboardType: numeric
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_tb_num
+btn_shift:
+  size:
+    width:
+      percentage: 0.15
+  action: shift
+  uppercasedStateAction: shift
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - shiftForegroundStyle
+  uppercasedStateForegroundStyle:
+    - shiftUppercasedForegroundStyle
+  capsLockedStateForegroundStyle:
+    - shiftCapsLockedForegroundStyle
+btn_backspace:
+  size:
+    width:
+      percentage: 0.15
+  action: backspace
+  repeatAction: backspace
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - backspaceForegroundStyle
+btn_enter:
+  size:
+    width:
+      percentage: 0.18
+  action: enter
+  backgroundStyle: accentButtonBackground
+  foregroundStyle:
+    - enterForegroundStyle
+btn_space_zh:
+  action: space
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_space_zh
+btn_space_en:
+  action: space
+  processByRIME: false
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_space_en
+btn_1_symbol_1:
+  action:
+    symbol: "1"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_1_18
+  size:
+    width:
+      percentage: 0.1
+btn_2_symbol_2:
+  action:
+    symbol: "2"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_2_18
+  size:
+    width:
+      percentage: 0.1
+btn_3_symbol_3:
+  action:
+    symbol: "3"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_3_18
+  size:
+    width:
+      percentage: 0.1
+btn_4_symbol_4:
+  action:
+    symbol: "4"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_4_18
+  size:
+    width:
+      percentage: 0.1
+btn_5_symbol_5:
+  action:
+    symbol: "5"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_5_18
+  size:
+    width:
+      percentage: 0.1
+btn_6_symbol_6:
+  action:
+    symbol: "6"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_6_18
+  size:
+    width:
+      percentage: 0.1
+btn_7_symbol_7:
+  action:
+    symbol: "7"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_7_18
+  size:
+    width:
+      percentage: 0.1
+btn_8_symbol_8:
+  action:
+    symbol: "8"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_8_18
+  size:
+    width:
+      percentage: 0.1
+btn_9_symbol_9:
+  action:
+    symbol: "9"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_9_18
+  size:
+    width:
+      percentage: 0.1
+btn_0_symbol_0:
+  action:
+    symbol: "0"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_0_18
+  size:
+    width:
+      percentage: 0.1
+btn_tilde_symbol_tilde:
+  action:
+    symbol: ~
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_tilde_19
+  size:
+    width:
+      percentage: 0.1
+btn_backtick_symbol_backtick:
+  action:
+    symbol: "`"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_backtick_19
+  size:
+    width:
+      percentage: 0.1
+btn_pipe_symbol_pipe:
+  action:
+    symbol: "|"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_pipe_19
+  size:
+    width:
+      percentage: 0.1
+btn_bullet_symbol_bullet:
+  action:
+    symbol: •
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_bullet_19
+  size:
+    width:
+      percentage: 0.1
+btn_check_symbol_check:
+  action:
+    symbol: √
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_check_19
+  size:
+    width:
+      percentage: 0.1
+btn_pi_symbol_pi:
+  action:
+    symbol: π
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_pi_19
+  size:
+    width:
+      percentage: 0.1
+btn_divide_symbol_divide:
+  action:
+    symbol: ÷
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_divide_19
+  size:
+    width:
+      percentage: 0.1
+btn_multiply_symbol_multiply:
+  action:
+    symbol: ×
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_multiply_19
+  size:
+    width:
+      percentage: 0.1
+btn_section_symbol_section:
+  action:
+    symbol: §
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_section_19
+  size:
+    width:
+      percentage: 0.1
+btn_delta_symbol_delta:
+  action:
+    symbol: Δ
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_delta_19
+  size:
+    width:
+      percentage: 0.1
+btn_pound_symbol_pound:
+  action:
+    symbol: £
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_pound_19
+  size:
+    width:
+      percentage: 0.1
+btn_cent_symbol_cent:
+  action:
+    symbol: ¢
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_cent_19
+  size:
+    width:
+      percentage: 0.1
+btn_euro_symbol_euro:
+  action:
+    symbol: €
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_euro_19
+  size:
+    width:
+      percentage: 0.1
+btn_yen_symbol_yen:
+  action:
+    symbol: ¥
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_yen_19
+  size:
+    width:
+      percentage: 0.1
+btn_caret_symbol_caret:
+  action:
+    symbol: ^
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_caret_19
+  size:
+    width:
+      percentage: 0.1
+btn_degree_symbol_degree:
+  action:
+    symbol: °
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_degree_19
+  size:
+    width:
+      percentage: 0.1
+btn_equal_symbol_equal:
+  action:
+    symbol: =
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_equal_19
+  size:
+    width:
+      percentage: 0.1
+btn_braceleft_symbol_braceleft:
+  action:
+    symbol: "{"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_braceleft_19
+  size:
+    width:
+      percentage: 0.1
+btn_braceright_symbol_braceright:
+  action:
+    symbol: "}"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_braceright_19
+  size:
+    width:
+      percentage: 0.1
+btn_backslash_symbol_backslash:
+  action:
+    symbol: "\\"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_backslash_19
+  size:
+    width:
+      percentage: 0.1
+btn_question_1_2_3_keyboardType_c_u_s_t_o_m_parenleft_e_n_underscore_s_y_m_1_parenright:
+  action:
+    keyboardType: "custom(en_sym1)"
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_question_1_2_3_17
+  size:
+    width:
+      percentage: 0.15
+btn_percent_symbol_percent:
+  action:
+    symbol: "%"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_percent_19
+  size:
+    width:
+      percentage: 0.1
+btn_copyright_symbol_copyright:
+  action:
+    symbol: ©
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_copyright_19
+  size:
+    width:
+      percentage: 0.1
+btn_registered_symbol_registered:
+  action:
+    symbol: ®
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_registered_19
+  size:
+    width:
+      percentage: 0.1
+btn_tm_symbol_tm:
+  action:
+    symbol: ™
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_tm_19
+  size:
+    width:
+      percentage: 0.1
+btn_checkmark_symbol_checkmark:
+  action:
+    symbol: ✓
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_checkmark_19
+  size:
+    width:
+      percentage: 0.1
+btn_bracketleft_symbol_bracketleft:
+  action:
+    symbol: "["
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_bracketleft_19
+  size:
+    width:
+      percentage: 0.1
+btn_bracketright_symbol_bracketright:
+  action:
+    symbol: "]"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_bracketright_19
+  size:
+    width:
+      percentage: 0.1
+btn_A_B_C_keyboardType_a_l_p_h_a_b_e_t_i_c:
+  action:
+    keyboardType: alphabetic
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_A_B_C_15
+  size:
+    width:
+      percentage: 0.14
+btn_less_symbol_less:
+  action:
+    symbol: <
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_less_17
+  size:
+    width:
+      percentage: 0.1
+btn_更_多_keyboardType_s_y_m_b_o_l_i_c:
+  action:
+    keyboardType: symbolic
+  backgroundStyle: functionButtonBackground
+  foregroundStyle:
+    - fg_更_多_14
+  size:
+    width:
+      percentage: 0.1
+btn_greater_symbol_greater:
+  action:
+    symbol: ">"
+  backgroundStyle: normalButtonBackground
+  foregroundStyle:
+    - fg_greater_17
+  size:
+    width:
+      percentage: 0.1
+toolbarButtonBackgroundStyle:
+  buttonStyleType: geometry
+  cornerRadius: 7
+  insets:
+    top: 2
+    bottom: 2
+    left: 2
+    right: 2
+  normalColor: "#00000000"
+  highlightColor: "#FFFFFF11"
+normalButtonBackground:
+  buttonStyleType: geometry
+  cornerRadius: 8.5
+  insets:
+    top: 3.5
+    bottom: 3.5
+    left: 2.5
+    right: 2.5
+  normalColor: "#FFFFFF22"
+  highlightColor: "#FFFFFF11"
+functionButtonBackground:
+  buttonStyleType: geometry
+  cornerRadius: 8.5
+  insets:
+    top: 3.5
+    bottom: 3.5
+    left: 2.5
+    right: 2.5
+  normalColor: "#FFFFFF44"
+  highlightColor: "#FFFFFF11"
+accentButtonBackground:
+  buttonStyleType: geometry
+  cornerRadius: 8.5
+  insets:
+    top: 3.5
+    bottom: 3.5
+    left: 2.5
+    right: 2.5
+  normalColor: "#66CCFFCC"
+  highlightColor: "#FFFFFF22"
+candidateStyle:
+  insets:
+    top: 3
+    bottom: 3
+    left: 6
+    right: 6
+  candidateStateButtonStyle: candidateStateButtonStyle
+  highlightBackgroundColor: "#3A3A3C"
+  preferredIndexColor: "#39C5BB"
+  preferredTextColor: "#39C5BB"
+  preferredCommentColor: "#A0A0A5"
+  indexColor: "#A0A0A5"
+  textColor: "#FFFFFF"
+  commentColor: "#A0A0A5"
+  indexFontSize: 11
+  textFontSize: 18
+  commentFontSize: 11
+horizontalCandidateStyle:
+  insets:
+    top: 3
+    bottom: 3
+    left: 6
+    right: 6
+  candidateStateButtonStyle: candidateStateButtonStyle
+  highlightBackgroundColor: "#3A3A3C"
+  preferredIndexColor: "#39C5BB"
+  preferredTextColor: "#39C5BB"
+  preferredCommentColor: "#A0A0A5"
+  indexColor: "#A0A0A5"
+  textColor: "#FFFFFF"
+  commentColor: "#A0A0A5"
+  indexFontSize: 11
+  textFontSize: 18
+  commentFontSize: 11
+verticalCandidateStyle:
+  insets:
+    top: 8
+    bottom: 8
+    left: 8
+    right: 8
+  backgroundInsets:
+    top: 8
+    bottom: 8
+    left: 8
+    right: 8
+  cornerRadius: 8
+  highlightBackgroundColor: "#3A3A3C"
+  preferredIndexColor: "#39C5BB"
+  preferredTextColor: "#39C5BB"
+  preferredCommentColor: "#A0A0A5"
+  indexColor: "#A0A0A5"
+  textColor: "#FFFFFF"
+  commentColor: "#A0A0A5"
+  indexFontSize: 11
+  textFontSize: 18
+  commentFontSize: 11
+candidateStateButtonStyle:
+  backgroundStyle: toolbarButtonBackgroundStyle
+  foregroundStyle: candidateStateButtonForegroundStyle
+candidateStateButtonForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: chevron.down
+  normalColor: "#FFFFFF"
+  fontSize: 16
+shiftForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: shift
+  normalColor: "#FFFFFF"
+  fontSize: 18
+shiftUppercasedForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: shift.fill
+  normalColor: "#FFFFFF"
+  fontSize: 18
+shiftCapsLockedForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: capslock.fill
+  normalColor: "#FFFFFF"
+  fontSize: 18
+backspaceForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: delete.left
+  normalColor: "#FFFFFF"
+  fontSize: 18
+languageForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: book.closed
+  normalColor: "#FFFFFF"
+  fontSize: 17
+dismissKeyboardForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: keyboard.chevron.compact.down
+  normalColor: "#FFFFFF"
+  fontSize: 18
+enterForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: magnifyingglass
+  normalColor: "#FFFFFF"
+  fontSize: 17
+returnArrowForegroundStyle:
+  buttonStyleType: systemImage
+  systemImageName: arrow.turn.down.left
+  normalColor: "#FFFFFF"
+  fontSize: 17
+chineseModeToggleForegroundStyle:
+  buttonStyleType: text
+  text: 中/英
+  normalColor: "#FFFFFF"
+  fontSize: 14
+fg_zh_comma_16:
+  buttonStyleType: text
+  text: ，
+  normalColor: "#FFFFFF"
+  fontSize: 16
+fg_zh_period_16:
+  buttonStyleType: text
+  text: 。
+  normalColor: "#FFFFFF"
+  fontSize: 16
+fg_zh_question_16:
+  buttonStyleType: text
+  text: ？
+  normalColor: "#FFFFFF"
+  fontSize: 16
+fg_tb_pinyin:
+  buttonStyleType: text
+  text: 拼音
+  normalColor: "#FFFFFF"
+  fontSize: 14
+fg_tb_alpha:
+  buttonStyleType: text
+  text: ABC
+  normalColor: "#FFFFFF"
+  fontSize: 14
+fg_tb_num:
+  buttonStyleType: text
+  text: "123"
+  normalColor: "#FFFFFF"
+  fontSize: 14
+fg_space_zh:
+  buttonStyleType: text
+  text: 拼音
+  normalColor: "#FFFFFF"
+  fontSize: 15
+fg_space_en:
+  buttonStyleType: text
+  text: English
+  normalColor: "#FFFFFF"
+  fontSize: 15
+fg_1_18:
+  buttonStyleType: text
+  text: "1"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_2_18:
+  buttonStyleType: text
+  text: "2"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_3_18:
+  buttonStyleType: text
+  text: "3"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_4_18:
+  buttonStyleType: text
+  text: "4"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_5_18:
+  buttonStyleType: text
+  text: "5"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_6_18:
+  buttonStyleType: text
+  text: "6"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_7_18:
+  buttonStyleType: text
+  text: "7"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_8_18:
+  buttonStyleType: text
+  text: "8"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_9_18:
+  buttonStyleType: text
+  text: "9"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_0_18:
+  buttonStyleType: text
+  text: "0"
+  normalColor: "#FFFFFF"
+  fontSize: 18
+  center:
+    x: 0.5
+    y: 0.54
+fg_tilde_19:
+  buttonStyleType: text
+  text: ~
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_backtick_19:
+  buttonStyleType: text
+  text: "`"
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_pipe_19:
+  buttonStyleType: text
+  text: "|"
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_bullet_19:
+  buttonStyleType: text
+  text: •
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_check_19:
+  buttonStyleType: text
+  text: √
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_pi_19:
+  buttonStyleType: text
+  text: π
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_divide_19:
+  buttonStyleType: text
+  text: ÷
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_multiply_19:
+  buttonStyleType: text
+  text: ×
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_section_19:
+  buttonStyleType: text
+  text: §
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_delta_19:
+  buttonStyleType: text
+  text: Δ
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_pound_19:
+  buttonStyleType: text
+  text: £
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_cent_19:
+  buttonStyleType: text
+  text: ¢
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_euro_19:
+  buttonStyleType: text
+  text: €
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_yen_19:
+  buttonStyleType: text
+  text: ¥
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_caret_19:
+  buttonStyleType: text
+  text: ^
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_degree_19:
+  buttonStyleType: text
+  text: °
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_equal_19:
+  buttonStyleType: text
+  text: =
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_braceleft_19:
+  buttonStyleType: text
+  text: "{"
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_braceright_19:
+  buttonStyleType: text
+  text: "}"
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_backslash_19:
+  buttonStyleType: text
+  text: "\\"
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_question_1_2_3_17:
+  buttonStyleType: text
+  text: "?123"
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_percent_19:
+  buttonStyleType: text
+  text: "%"
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_copyright_19:
+  buttonStyleType: text
+  text: ©
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_registered_19:
+  buttonStyleType: text
+  text: ®
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_tm_19:
+  buttonStyleType: text
+  text: ™
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_checkmark_19:
+  buttonStyleType: text
+  text: ✓
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_bracketleft_19:
+  buttonStyleType: text
+  text: "["
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_bracketright_19:
+  buttonStyleType: text
+  text: "]"
+  normalColor: "#FFFFFF"
+  fontSize: 19
+  center:
+    x: 0.5
+    y: 0.54
+fg_A_B_C_15:
+  buttonStyleType: text
+  text: ABC
+  normalColor: "#FFFFFF"
+  fontSize: 15
+  center:
+    x: 0.5
+    y: 0.54
+fg_less_17:
+  buttonStyleType: text
+  text: <
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54
+fg_更_多_14:
+  buttonStyleType: text
+  text: 更多
+  normalColor: "#FFFFFF"
+  fontSize: 14
+  center:
+    x: 0.5
+    y: 0.54
+fg_greater_17:
+  buttonStyleType: text
+  text: ">"
+  normalColor: "#FFFFFF"
+  fontSize: 17
+  center:
+    x: 0.5
+    y: 0.54

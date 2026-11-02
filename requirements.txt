@@ -1,0 +1,3 @@
+# No external dependencies required.
+# The build script (scripts/build.py) relies exclusively on the Python standard library.
+# Compatible with Python 3.8+

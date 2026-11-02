@@ -1,0 +1,242 @@
+name: CatnipGboard
+author: Salt
+pinyin:
+  iPhone:
+    portrait: pinyinPortrait
+    landscape: pinyinLandscape
+  iPad:
+    portrait: pinyinPortrait
+    landscape: pinyinLandscape
+    floating: pinyinPortrait
+chinese:
+  iPhone:
+    portrait: pinyinPortrait
+    landscape: pinyinLandscape
+  iPad:
+    portrait: pinyinPortrait
+    landscape: pinyinLandscape
+    floating: pinyinPortrait
+alphabetic:
+  iPhone:
+    portrait: alphabeticPortrait
+    landscape: alphabeticLandscape
+  iPad:
+    portrait: alphabeticPortrait
+    landscape: alphabeticLandscape
+    floating: alphabeticPortrait
+english:
+  iPhone:
+    portrait: alphabeticPortrait
+    landscape: alphabeticLandscape
+  iPad:
+    portrait: alphabeticPortrait
+    landscape: alphabeticLandscape
+    floating: alphabeticPortrait
+numeric:
+  iPhone:
+    portrait: zhNumPortrait
+    landscape: zhNumLandscape
+  iPad:
+    portrait: zhNumPortrait
+    landscape: zhNumLandscape
+    floating: zhNumPortrait
+numericNineGrid:
+  iPhone:
+    portrait: zhNumPortrait
+    landscape: zhNumLandscape
+  iPad:
+    portrait: zhNumPortrait
+    landscape: zhNumLandscape
+    floating: zhNumPortrait
+zh_sym1:
+  iPhone:
+    portrait: zhSym1Portrait
+    landscape: zhSym1Landscape
+  iPad:
+    portrait: zhSym1Portrait
+    landscape: zhSym1Landscape
+    floating: zhSym1Portrait
+zhSym1:
+  iPhone:
+    portrait: zhSym1Portrait
+    landscape: zhSym1Landscape
+  iPad:
+    portrait: zhSym1Portrait
+    landscape: zhSym1Landscape
+    floating: zhSym1Portrait
+"custom(zh_sym1)":
+  iPhone:
+    portrait: zhSym1Portrait
+    landscape: zhSym1Landscape
+  iPad:
+    portrait: zhSym1Portrait
+    landscape: zhSym1Landscape
+    floating: zhSym1Portrait
+"custom(zhSym1)":
+  iPhone:
+    portrait: zhSym1Portrait
+    landscape: zhSym1Landscape
+  iPad:
+    portrait: zhSym1Portrait
+    landscape: zhSym1Landscape
+    floating: zhSym1Portrait
+zh_sym2:
+  iPhone:
+    portrait: zhSym2Portrait
+    landscape: zhSym2Landscape
+  iPad:
+    portrait: zhSym2Portrait
+    landscape: zhSym2Landscape
+    floating: zhSym2Portrait
+zhSym2:
+  iPhone:
+    portrait: zhSym2Portrait
+    landscape: zhSym2Landscape
+  iPad:
+    portrait: zhSym2Portrait
+    landscape: zhSym2Landscape
+    floating: zhSym2Portrait
+"custom(zh_sym2)":
+  iPhone:
+    portrait: zhSym2Portrait
+    landscape: zhSym2Landscape
+  iPad:
+    portrait: zhSym2Portrait
+    landscape: zhSym2Landscape
+    floating: zhSym2Portrait
+"custom(zhSym2)":
+  iPhone:
+    portrait: zhSym2Portrait
+    landscape: zhSym2Landscape
+  iPad:
+    portrait: zhSym2Portrait
+    landscape: zhSym2Landscape
+    floating: zhSym2Portrait
+en_sym1:
+  iPhone:
+    portrait: enSym1Portrait
+    landscape: enSym1Landscape
+  iPad:
+    portrait: enSym1Portrait
+    landscape: enSym1Landscape
+    floating: enSym1Portrait
+enSym1:
+  iPhone:
+    portrait: enSym1Portrait
+    landscape: enSym1Landscape
+  iPad:
+    portrait: enSym1Portrait
+    landscape: enSym1Landscape
+    floating: enSym1Portrait
+"custom(en_sym1)":
+  iPhone:
+    portrait: enSym1Portrait
+    landscape: enSym1Landscape
+  iPad:
+    portrait: enSym1Portrait
+    landscape: enSym1Landscape
+    floating: enSym1Portrait
+"custom(enSym1)":
+  iPhone:
+    portrait: enSym1Portrait
+    landscape: enSym1Landscape
+  iPad:
+    portrait: enSym1Portrait
+    landscape: enSym1Landscape
+    floating: enSym1Portrait
+en_sym2:
+  iPhone:
+    portrait: enSym2Portrait
+    landscape: enSym2Landscape
+  iPad:
+    portrait: enSym2Portrait
+    landscape: enSym2Landscape
+    floating: enSym2Portrait
+enSym2:
+  iPhone:
+    portrait: enSym2Portrait
+    landscape: enSym2Landscape
+  iPad:
+    portrait: enSym2Portrait
+    landscape: enSym2Landscape
+    floating: enSym2Portrait
+"custom(en_sym2)":
+  iPhone:
+    portrait: enSym2Portrait
+    landscape: enSym2Landscape
+  iPad:
+    portrait: enSym2Portrait
+    landscape: enSym2Landscape
+    floating: enSym2Portrait
+"custom(enSym2)":
+  iPhone:
+    portrait: enSym2Portrait
+    landscape: enSym2Landscape
+  iPad:
+    portrait: enSym2Portrait
+    landscape: enSym2Landscape
+    floating: enSym2Portrait
+zh_num:
+  iPhone:
+    portrait: zhNumPortrait
+    landscape: zhNumLandscape
+  iPad:
+    portrait: zhNumPortrait
+    landscape: zhNumLandscape
+    floating: zhNumPortrait
+zhNum:
+  iPhone:
+    portrait: zhNumPortrait
+    landscape: zhNumLandscape
+  iPad:
+    portrait: zhNumPortrait
+    landscape: zhNumLandscape
+    floating: zhNumPortrait
+"custom(zh_num)":
+  iPhone:
+    portrait: zhNumPortrait
+    landscape: zhNumLandscape
+  iPad:
+    portrait: zhNumPortrait
+    landscape: zhNumLandscape
+    floating: zhNumPortrait
+"custom(zhNum)":
+  iPhone:
+    portrait: zhNumPortrait
+    landscape: zhNumLandscape
+  iPad:
+    portrait: zhNumPortrait
+    landscape: zhNumLandscape
+    floating: zhNumPortrait
+en_num:
+  iPhone:
+    portrait: enNumPortrait
+    landscape: enNumLandscape
+  iPad:
+    portrait: enNumPortrait
+    landscape: enNumLandscape
+    floating: enNumPortrait
+enNum:
+  iPhone:
+    portrait: enNumPortrait
+    landscape: enNumLandscape
+  iPad:
+    portrait: enNumPortrait
+    landscape: enNumLandscape
+    floating: enNumPortrait
+"custom(en_num)":
+  iPhone:
+    portrait: enNumPortrait
+    landscape: enNumLandscape
+  iPad:
+    portrait: enNumPortrait
+    landscape: enNumLandscape
+    floating: enNumPortrait
+"custom(enNum)":
+  iPhone:
+    portrait: enNumPortrait
+    landscape: enNumLandscape
+  iPad:
+    portrait: enNumPortrait
+    landscape: enNumLandscape
+    floating: enNumPortrait
